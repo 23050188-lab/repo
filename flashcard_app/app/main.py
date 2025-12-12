@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .db.database import engine, Base
+from app.db.session import engine
+from app.db.base import Base
 from .routers import decks, study
 
 # Tự động tạo bảng nếu chưa có
