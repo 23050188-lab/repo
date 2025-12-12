@@ -1,0 +1,19 @@
+.study-container { max-width: 800px; margin: 0 auto; text-align: center; }
+.progress-bar-bg { background: #e5e7eb; height: 8px; border-radius: 4px; margin: 1rem 0 2rem; overflow: hidden; }
+.progress-bar-fill { background: var(--primary); height: 100%; width: 0%; transition: width 0.5s; }
+
+.flashcard-scene { perspective: 1000px; width: 100%; height: 400px; margin-bottom: 2rem; cursor: pointer; }
+.flashcard-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s; transform-style: preserve-3d; }
+.flashcard-inner.is-flipped { transform: rotateY(180deg); }
+
+.card-face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 500; background: white; border-radius: 1.5rem; box-shadow: var(--card-shadow); padding: 2rem; border: 1px solid #e5e7eb; }
+.card-back { transform: rotateY(180deg); background: #eff6ff; color: var(--primary); }
+
+.controls { display: flex; justify-content: center; gap: 1rem; margin-top: 1rem; }
+.btn-circle { width: 50px; height: 50px; border-radius: 50%; border: none; cursor: pointer; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; transition: transform 0.2s; color: white;}
+.btn-circle:hover { transform: scale(1.1); }
+/* Màu nút đánh giá */
+.bg-red { background: #ef4444; }
+.bg-orange { background: #f97316; }
+.bg-green { background: #22c55e; }
+.bg-blue { background: #3b82f6; }
